@@ -38,7 +38,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -512,7 +512,7 @@ header {
 .about_img img {
     display: flex;
     max-width: 100%;
-    min-width: 500px;
+    min-width: 400px;
     border-radius: 10px;
 }
 
@@ -537,5 +537,22 @@ header {
     font-size: var(--normal-font-size);
     margin-bottom: 15px;
     padding-bottom: 25px;
-    border-bottom: 2px solid var(--third-color);
+    border-bottom: 2px solid var(--line-color);
 }
+
+
+.about_info .professional_list{
+    display: flex;
+    gap: 40px;
+}
+
+.about_info .professional_list .list_item h3{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.about_info .professional_list .list_item span{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+}
+
