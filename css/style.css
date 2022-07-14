@@ -38,7 +38,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -322,12 +322,12 @@ header {
     align-items: center;
 }
 
-.section {
+ .section {
     position: relative;
-    width: 1150px;
+    width: 1250px;
     margin: 0 auto;
     padding: 6rem 2rem 2rem;
-}
+} 
 
 .sub_section {
     position: relative;
