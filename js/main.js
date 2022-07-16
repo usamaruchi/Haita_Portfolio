@@ -12,7 +12,24 @@ $(function () {
 })
 
 // Navigation bar
-window.addEventListener('scroll', function(){
-    console.log('Hi!');
+window.addEventListener('scroll', function () {
+    // console.log('Hi!');
+
+    // header
+    const header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+
 })
+
+// $(window).scroll(function () {
+//     // console.log('scrolled top:', $(window).scrollTop());
+//     if ($(window).scrollTop() > 0) {
+//         // console.log("Hi!");
+//         $('header').addClass('sticky');
+//     }else{
+//         $('header').removeClass('sticky');
+//     }
+// })
+
+
 
