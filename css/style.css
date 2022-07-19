@@ -38,7 +38,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -876,4 +876,51 @@ header.sticky .nav_bar {
     width: 100%;
     margin: 20px 0;
     border-radius: 10px;
+}
+
+/* Contact */
+/* .get_in_touch{
+    margin: 70px;
+} */
+
+.contact .container .content {
+    width: 100%;
+}
+
+.contact .contact_card {
+    position: relative;
+    width: 90%;
+    background-color: var(--card-bg-color);
+    box-shadow: var(--box-shoadow);
+    padding: 50px;
+    border-radius: 10px;
+    gap: 100px;
+}
+
+.contact_card .title {
+    line-height: 60px;
+}
+
+.contact_card .title h4 {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.contact_card .title h3 {
+    font-size: 2.3em;
+    font-weight: 400;
+}
+
+.contact_card .title h2 {
+    font-size: 4.2em;
+    font-weight: 700;
+    background: linear-gradient(to top, transparent 0%, var(--first-color) 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .9;
+}
+
+.contact_btn .btn {
+    margin-top: 0;
 }
