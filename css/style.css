@@ -38,7 +38,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -923,4 +923,77 @@ header.sticky .nav_bar {
 
 .contact_btn .btn {
     margin-top: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--second-color);
+    width: 100%;
+    margin-top: 150px;
+    padding: 3rem 2rem;
+    color: #FFF;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.footer_container .about h2 {
+    font-size: 3em;
+    font-weight: 600;
+    background: linear-gradient(to top, transparent 0%, #fff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .8;
+}
+
+.footer_container .about p {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer_container .info,
+.footer_container .follow {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_container .info h3,
+.footer_container .follow h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer_container .info ul,
+.footer_container .follow ul{
+    display: flex;
+} 
+
+.footer_container .info a{
+    margin: 20px;
+}
+
+.footer_container .follow a{
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.footer_copyright p{
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    margin-top: 30px;
 }
