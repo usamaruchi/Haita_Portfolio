@@ -33,6 +33,25 @@ window.addEventListener('scroll', function () {
 
 
 // Portfolio
-const 
+const portfolioModals = document.querySelectorAll(".portfolio_model");
+const imgCards = document.querySelectorAll(".img_card");
+const portfolioCloseBtns = document.querySelectorAll(".portfolio_close_btn");
 
+var portfolioModal = function (modalClick) {
+    portfolioModals[modalClick].classList.add("active");
+}
+
+imgCards.forEach((imgCard, i) => {
+    imgCard.addEventListener("click", () => {
+        portfolioModal(i);
+    })
+})
+
+portfolioCloseBtns.forEach((portfolioCloseBtn) => {
+    portfolioCloseBtn.addEventListener("click", () => {
+        portfolioModals.forEach((portfolioModalView) => {
+            portfolioModalView.classList.remove("active");
+        });
+    })
+})
 
