@@ -90,10 +90,14 @@ li {
 
 /* Loading */
 .load {
+    z-index: 9999999;
+    position: fixed;
     height: 100vh;
+    width: 100vw;
     background: var(--first-color);
     overflow: hidden;
     pointer-events: none;
+    transition: 1.5s ease;
 }
 
 .load::before {
@@ -247,10 +251,11 @@ li {
     /* outline: 1px solid red; */
     display: none;
     position: absolute;
-    top: 130%;
+    top: 140%;
     left: 50%;
     pointer-events: auto;
     cursor: pointer;
+    padding: 3% 0;
 }
 
 .nextpage_btn span {
@@ -259,7 +264,7 @@ li {
     height: 15px;
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     margin: -5px;
     animation: nextpage_btn 2s infinite;
 
@@ -268,7 +273,8 @@ li {
 @keyframes nextpage_btn {
     0% {
         opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
+        
+        transform: rotate(225deg) translate(-30px, -30px);
     }
 
     50% {
@@ -277,7 +283,7 @@ li {
 
     100% {
         opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
+        transform: rotate(225deg) translate(30px, 30px);
     }
 
 }
@@ -286,8 +292,13 @@ li {
     animation-delay: -.1s;
 }
 
-.nextpage_btn span:nth-child(3) {
+.nextpage_btn span:nth-child(1) {
     animation-delay: -.2s;
+}
+
+/* Show */
+.show{
+    display: none;
 }
 
 /* Scroll to top */

@@ -5,11 +5,22 @@ $(function () {
         $(".nextpage_btn").show();
     }, 5000);
 
+    // setTimeout(function () {
+    //     $("#load_video").hide();
+    // }, 8000);
+})
+
+$(".nextpage_btn").click(function () {
+    $(".load").css("transform", "translateY(-100vh)");
+
+    $(".show").css("display", "block");
+
     setTimeout(function () {
-        $("#load_video").hide();
-    }, 8000);
+        $(".load").hide();
+    }, 3000);
 
 })
+
 
 // Scroll to top
 const scrollTopBtn = document.querySelector(".scrollToTop_btn");
@@ -31,8 +42,6 @@ window.addEventListener("scroll", () => {
         let sectionHeight = current.offsetHeight;
         let sectionTop = current.offsetTop - 50;
         let id = current.getAttribute("id");
-
-        console.log("sectionTop = ", sectionTop);
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector(".nav_items a[href*=" + id + "]").classList.add("active");
