@@ -34,11 +34,33 @@
     --scroll-bar-color: #c5cadf;
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
+}
 
+.dark_theme {
+    /* Main theme colors */
+    --first-color: #fff;
+    --second-color: #6a59d1;
+    --third-color: #a9afc3;
+
+    /* Background colors */
+    --body-bg-color: #0e1b31;
+    --card-bg-color: #132347;
+    --modal-bg-color: #102048;
+    --bg-transparent-color: rgba(255,255,255, 0.1);
+    --transparent-color-01: rgba(255,255,255, 0.1);
+    --line-color: #454f6b;
+
+    /* Filter color */
+    --color-filter: invert(0);
+
+    /* Scroll bar colors */
+    --scroll-bar-color: #c1ceff;
+    --scroll-thumb-color: #2e2f4e;
+    --scroll-thumb-hover-color: #454f6b;
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,7 +88,7 @@ li {
     list-style: none;
 }
 
-/* section landing_page */
+/* Loading */
 .load {
     height: 100vh;
     background: var(--first-color);
@@ -268,6 +290,53 @@ li {
     animation-delay: -.2s;
 }
 
+/* Scroll to top */
+.scrollToTop_btn {
+    z-index: 77777;
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    background: var(--second-color);
+    color: #fff;
+    border-radius: 3px;
+    font-size: var(--small-font-size);
+    cursor: pointer;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.scrollToTop_btn.active {
+    right: 20px;
+    pointer-events: all;
+    opacity: 1;
+}
+
+/* Light/Dark */
+.theme_btn {
+    z-index: 77777;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background-color: var(--transparent-color-01);
+    backdrop-filter: blur(20px);
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shoadow);
+    cursor: pointer;
+}
+
+.theme_btn .fa-sun, .theme_btn.sun .fa-moon {
+    display: none;
+}
+
+.theme_btn.sun .fa-sun {
+    display: block;
+}
+
 /* Scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -332,6 +401,10 @@ header.sticky .nav_bar {
     font-weight: 500;
 }
 
+.nav_items a.active {
+    color: var(--second-color);
+}
+
 /* not選中除了a以外的，last-child選中最後一個子層 */
 .nav_items a:not(:last-child) {
     margin-right: 50px;
@@ -375,7 +448,7 @@ header.sticky .nav_bar {
 .section_title_02 {
     font-size: 2.5em;
     font-weight: 700;
-    transform: translateY(-90px);
+    transform: translateY(-80px);
 }
 
 .section_title_02::before {
@@ -383,7 +456,7 @@ header.sticky .nav_bar {
     position: absolute;
     width: 80px;
     height: 3px;
-    right: 0;
+    right: 0px;
     bottom: 0;
     background: var(--second-color);
 }
@@ -979,20 +1052,20 @@ footer a {
 }
 
 .footer_container .info ul,
-.footer_container .follow ul{
+.footer_container .follow ul {
     display: flex;
-} 
+}
 
-.footer_container .info a{
+.footer_container .info a {
     margin: 20px;
 }
 
-.footer_container .follow a{
+.footer_container .follow a {
     font-size: 1.5em;
     margin: 20px;
 }
 
-.footer_copyright p{
+.footer_copyright p {
     font-size: var(--normal-font-size);
     font-weight: 300;
     margin-top: 30px;
