@@ -118,3 +118,23 @@ portfolioCloseBtns.forEach((portfolioCloseBtn) => {
 })
 
 
+// RWD Menu toggle
+const menuBtn = document.querySelector(".nav_menu_btn");
+const closeBtn = document.querySelector(".nav_close_btn");
+const navigation = document.querySelector(".navigation");
+const navItem = document.querySelectorAll(".nav_items a");
+
+menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+})
+
+closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+})
+
+// 按下後關閉navigation
+navItem.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+        navigation.classList.remove("active");
+    });
+})
