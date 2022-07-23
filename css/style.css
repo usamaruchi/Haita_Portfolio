@@ -798,35 +798,35 @@ header.sticky .nav_bar {
 }
 
 .bar .html::before {
-    width: 80%;
+    width: 85%;
 }
 
 .bar .css::before {
-    width: 80%;
+    width: 85%;
 }
 
 .bar .javascript::before {
-    width: 60%;
+    width: 70%;
 }
 
 .bar .jquery::before {
-    width: 70%;
+    width: 75%;
 }
 
 .bar .php::before {
-    width: 50%;
+    width: 60%;
 }
 
 .bar .figma::before {
-    width: 70%;
+    width: 80%;
 }
 
 .bar .photoshop::before {
-    width: 80%;
+    width: 90%;
 }
 
 .bar .illustrator::before {
-    width: 80%;
+    width: 90%;
 }
 
 .experience_card {
