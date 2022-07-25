@@ -60,7 +60,7 @@
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1275,10 +1275,15 @@ footer a {
 
 }
 
-/* Media max-weight 1070px */
+/* Media max-weight 730px */
 @media screen and (max-width: 730px) {
     body {
         margin: 5rem 0 0 0;
+    }
+
+    /* 通用Style */
+    .text_center{
+        text-align: center;
     }
 
     .section_title_01 {
@@ -1290,8 +1295,40 @@ footer a {
         transform: translateY(-65px);
     }
 
+    /* Home */
     .home .home_container {
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
+        margin-top: 150px;
     }
+
+    .home_container .home_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -400px);
+
+        display: flex;
+        width: 100%;
+        max-width: 320px;
+        max-height: 320px;
+
+    }
+
+    .home_container .media_icons {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .home_container .media_icons a{
+        margin: 15px 15px;
+    }
+
+    .home .home_container .info {
+        font-size: 0.8rem;
+    }
+
+ 
 
 }
