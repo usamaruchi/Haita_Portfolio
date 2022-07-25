@@ -798,15 +798,15 @@ header.sticky .nav_bar {
 }
 
 .bar .html::before {
-    width: 85%;
+    width: 90%;
 }
 
 .bar .css::before {
-    width: 85%;
+    width: 90%;
 }
 
 .bar .javascript::before {
-    width: 70%;
+    width: 75%;
 }
 
 .bar .jquery::before {
@@ -818,7 +818,7 @@ header.sticky .nav_bar {
 }
 
 .bar .figma::before {
-    width: 80%;
+    width: 85%;
 }
 
 .bar .photoshop::before {
@@ -1103,7 +1103,6 @@ footer a {
     margin-top: 30px;
 }
 
-/* Media max-weight 1070px */
 @media screen and (max-width: 1070px) {
 
     /* Header Nav */
@@ -1221,10 +1220,78 @@ footer a {
 
     /* Contact */
     .contact .contact_card {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        gap: 50px;
+    }
+
+    .contact .contact_card .title {
+        /* display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center; */
+
+        font-size: 1.2rem;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .contact .contact_card .contact_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Footer */
+    footer .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_container .about,
+    .footer_container .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .footer_container .info ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_container .info ul li {
+        margin: 5px 0;
+    }
+
+    .footer_container .line {
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Media max-weight 1070px */
+@media screen and (max-width: 730px) {
+    body {
+        margin: 5rem 0 0 0;
+    }
+
+    .section_title_01 {
+        font-size: 3em;
+    }
+
+    .section_title_02 {
+        font-size: 2em;
+        transform: translateY(-65px);
+    }
+
+    .home .home_container {
+        display: grid;
+    }
 
 }
