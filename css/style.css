@@ -965,6 +965,12 @@ header.sticky .nav_bar {
     transition: .3s ease;
 }
 
+.portfolio_model_body span{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+    font-weight: 300;
+}
+
 .portfolio_model.active .portfolio_model_body {
     transform: translateY(0);
 }
