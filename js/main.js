@@ -11,7 +11,7 @@ $(function () {
 })
 
 $(".nextpage_btn").click(function () {
-    $(".load").css("transform", "translateY(-100vh)");
+    $(".load").css("transform", "translateY(-110vh)");
 
     $(".show").css("display", "block");
 
