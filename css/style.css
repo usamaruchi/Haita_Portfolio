@@ -1,6 +1,6 @@
 :root {
     /* logo */
-    --logo-img:url(./images/logo_dark.png)no-repeat;
+    --logo-img:url(/logo_dark.svg)no-repeat;
 
     /* font */
     --font-ENG: 'Roboto';
@@ -41,7 +41,7 @@
 
 .dark_theme {
     /* logo */
-    --logo-img:url(./images/logo.svg)no-repeat;
+    --logo-img:url(/logo.svg)no-repeat;
 
     /* Main theme colors */
     --first-color: #fff;
@@ -413,6 +413,7 @@ header.sticky .nav_bar {
     width: 40px;
     height: 40px;
     background: var(--logo-img);
+    /* background: url(/logo_dark.svg); */
     background-size: 40px 40px;
 }
 
