@@ -1,6 +1,6 @@
 :root {
     /* logo */
-    --logo-img:url(/images/logo_dark.png)no-repeat;
+    --logo-img:url(./images/logo_dark.png)no-repeat;
 
     /* font */
     --font-ENG: 'Roboto';
@@ -41,7 +41,7 @@
 
 .dark_theme {
     /* logo */
-    --logo-img:url(/images/logo.svg)no-repeat;
+    --logo-img:url(./images/logo.svg)no-repeat;
 
     /* Main theme colors */
     --first-color: #fff;
