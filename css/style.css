@@ -1,4 +1,7 @@
 :root {
+    /* logo */
+    --logo-img:url(/images/logo_dark.png)no-repeat;
+
     /* font */
     --font-ENG: 'Roboto';
     --font-CHT: 'Noto Sans TC';
@@ -37,6 +40,9 @@
 }
 
 .dark_theme {
+    /* logo */
+    --logo-img:url(/images/logo.svg)no-repeat;
+
     /* Main theme colors */
     --first-color: #fff;
     --second-color: #6a59d1;
@@ -400,10 +406,14 @@ header.sticky .nav_bar {
 }
 
 .nav_bar .logo {
-    color: var(--first-color);
+    /* color: var(--first-color); */
     /* color: white; */
-    font-size: 1.3em;
-    font-weight: 600;
+    /* font-size: 1.3em; */
+    /* font-weight: 600; */
+    width: 40px;
+    height: 40px;
+    background: var(--logo-img);
+    background-size: 40px 40px;
 }
 
 .nav_items a {
@@ -680,6 +690,12 @@ header.sticky .nav_bar {
     margin-bottom: 5px;
 }
 
+.skills_description p{
+    /* font-size: 1.5em; */
+    color: var(--third-color);
+}
+
+
 .skills_info {
     max-width: 100%;
     display: grid;
@@ -930,8 +946,8 @@ header.sticky .nav_bar {
     position: relative;
     background: var(--modal-bg-color);
     max-width: 600px;
-    margin: 20px;
-    padding: 40px;
+    margin: 1.5em;
+    padding: 1.5em;
     border-radius: 10px;
     box-shadow: var(--box-shoadow);
 
@@ -945,10 +961,18 @@ header.sticky .nav_bar {
     font-weight: 300;
 }
 
-.portfolio_model_body a{
-    color: var(--first-color);
-    font-size: 1.2em;
-    font-weight: 400;
+.portfolio_model_body a,
+.portfolio_model_body .movwe_demo{
+    color: var(--second-color);
+    font-size: 1.1em;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 2;
+}
+
+.portfolio_model_body a:hover,
+.portfolio_model_body .movwe_demo:hover{
+    color: var(--hover-color);
 }
 
 .portfolio_model.active .portfolio_model_body {
