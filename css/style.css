@@ -543,6 +543,11 @@ header.sticky .nav_bar {
     max-width: 500px;
 }
 
+.btn_wrap{
+    display: flex;
+    gap: 40px;
+}
+
 .btn {
     background-color: var(--second-color);
     color: #FFF;
@@ -1340,6 +1345,9 @@ footer a {
         font-size: 0.8rem;
     }
 
-
+    /* About */
+    .btn_wrap{
+        justify-content: center;
+    }
 
 }
