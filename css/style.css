@@ -406,15 +406,11 @@ header.sticky .nav_bar {
 }
 
 .nav_bar .logo {
-    /* color: var(--first-color); */
-    /* color: white; */
-    /* font-size: 1.3em; */
-    /* font-weight: 600; */
     width: 40px;
     height: 40px;
     background: var(--logo-img);
     /* background: url(../images/logo_dark.png); */
-    background-size: 40px 40px;
+    background-size: contain;
 }
 
 .nav_items a {
