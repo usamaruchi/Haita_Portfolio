@@ -15,7 +15,9 @@
     <title>個人作品集 by 戚瀚</title>
     <link rel="shortcut icon" href="./images/aowyp-5u3bd-001.ico">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -29,6 +31,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -118,7 +122,8 @@
                     <h3>網頁設計師</h3>
                     <p>Keep going. <i class="fa-solid fa-otter"></i></p>
                     <div class="text_center">
-                        <a href="#about" class="btn ">關於我 <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        <a href="#about" class="btn">關於我 <i
+                                class="fa-solid fa-circle-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="home_img">
@@ -352,11 +357,11 @@
             </div>
         </section>
 
-        <!-- Portfolio -->
+        <!-- Portfolio Web -->
         <section class="portfolio section" id="portfolio">
             <div class="container flex_center">
-                <h1 class="section_title_01">作品</h1>
-                <h2 class="section_title_02">作品</h2>
+                <h1 class="section_title_01">作品網站</h1>
+                <h2 class="section_title_02">作品網站</h2>
                 <div class="content">
                     <div class="portfolio_list">
                         <div class="img_card_container">
@@ -430,6 +435,74 @@
             </div>
         </section>
 
+        <!-- Portfolio Img -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container flex_center">
+                <h1 class="section_title_01">作品圖集</h1>
+                <h2 class="section_title_02">作品圖集</h2>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide"><img src="/images/about.jpg" alt=""></div> -->
+                        <div class="swiper-slide"><img src="/images/forum_banner01.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/forum_banner02.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/forum_banner03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/mall_banner.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/images/point_banner.jpg" alt=""></div>
+                       
+                    </div>
+                    <div class=" swiper-pagination"></div>
+                </div>
+                <div class="empty"></div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/forum_banner01_s.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/forum_banner02_s.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/forum_banner03_s.jpg" alt="">   
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/mall_banner_s.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/point_banner_s.jpg" alt="">    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_banner">
+                                <img src="/images/mell_point.jpg" alt="">  
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class=" swiper-pagination"></div>
+                </div>
+                <div class="empty"></div>
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="img_s">
+                                <img src="/images/about.jpg" alt="">
+                            </div>
+                        </div>
+                    <div class=" swiper-pagination"></div>
+                </div>
+            </div>  
+        </section>
+
         <!-- Contact -->
         <section class="contact section" id="contact">
             <div class="container flex_center">
@@ -488,9 +561,15 @@
         </footer>
     </div>
 
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
 
 </body>
 

@@ -138,3 +138,13 @@ navItem.forEach((navItem) => {
         navigation.classList.remove("active");
     });
 })
+
+
+// Swiper
+// Initialize Swiper
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});
