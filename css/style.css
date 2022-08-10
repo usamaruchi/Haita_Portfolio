@@ -106,7 +106,7 @@ li {
     transition: 1.5s ease;
 }
 
-.load::before {
+/* .load::before {
     content: '';
     position: absolute;
     top: 0;
@@ -115,8 +115,8 @@ li {
     height: 100%;
     background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff);
     mix-blend-mode: color;
-    /* pointer-events: none; */
-}
+    pointer-events: none;
+} */
 
 .load video {
     object-fit: cover;
