@@ -806,7 +806,7 @@ header.sticky .nav_bar {
 }
 
 .bar .php::before {
-    width: 60%;
+    width: 70%;
 }
 
 .bar .figma::before {
@@ -819,6 +819,12 @@ header.sticky .nav_bar {
 
 .bar .illustrator::before {
     width: 90%;
+}
+.bar .max::before {
+    width: 85%;
+}
+.bar .unity::before {
+    width: 80%;
 }
 
 .experience_card {
