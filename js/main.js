@@ -148,3 +148,26 @@ var swiper = new Swiper(".mySwiper", {
         dynamicBullets: true,
     },
 });
+
+// Scroll reveal animations
+// Common reveal options to create reveal animations
+ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duraction: 2500,
+    delay: 100
+});
+
+//Target elements, and specify options to create reveal animations
+ScrollReveal().reveal('.home .info h2, .section_title_01, .section_title_02', { deley: 500, origin: 'left' });
+ScrollReveal().reveal('.home .info h3, .home .info p, .about_info .btn', { deley: 600, origin: 'right' });
+ScrollReveal().reveal('.home .info .btn, .scroll_down', { deley: 700, origin: 'bottom' });
+ScrollReveal().reveal('.media_icons i', { deley: 500, origin: 'left', interval: 150 });
+ScrollReveal().reveal('.home_img, .about_img', { deley: 500, origin: 'bottom' });
+ScrollReveal().reveal('.about .description', { deley: 600, origin: 'right' });
+ScrollReveal().reveal('.about .professional_list li', { deley: 500, origin: 'right', interval: 150 });
+ScrollReveal().reveal('.skills_description, .contact_card', { deley: 700, origin: 'left' });
+ScrollReveal().reveal('.mySwiper', { deley: 800, origin: 'left',interval: 150 });
+ScrollReveal().reveal('.experience_card,.education,.portfolio .img_card', { deley: 800, origin: 'bottom', interval: 150 });
+ScrollReveal().reveal('.footer_container .group', { deley: 500, origin: 'top', interval: 150});
+
