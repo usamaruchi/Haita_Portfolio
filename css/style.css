@@ -304,8 +304,13 @@ li {
 
 /* Show */
 .show {
-    display: none;
+    /* display: none; */
+    overflow: hidden;
 }
+
+/* .sho {
+    overflow: hidden;
+} */
 
 /* Scroll to top */
 .scrollToTop_btn {
@@ -565,7 +570,7 @@ header.sticky .nav_bar {
 }
 
 .home_container .home_img {
-    position: relative;
+    /* position: relative; */
     width: 450px;
     height: 450px;
     border-radius: 50%;
@@ -820,9 +825,11 @@ header.sticky .nav_bar {
 .bar .illustrator::before {
     width: 90%;
 }
+
 .bar .max::before {
     width: 85%;
 }
+
 .bar .unity::before {
     width: 80%;
 }
@@ -1389,15 +1396,11 @@ footer a {
 
     .home_container .home_img {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -400px);
-
+        top: 0;
         display: flex;
         width: 100%;
         max-width: 320px;
         max-height: 320px;
-
     }
 
     .home_container .media_icons {
@@ -1428,3 +1431,62 @@ footer a {
     }
 
 }
+
+
+/* particles */
+/* ---- base ---- */
+/* ---- reset ---- */
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-color: #00000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; */
+}
+
+/* ---- stats.js ---- */
+/* .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+} */
+
+/* .js-count-particles {
+    font-size: 1.1em;
+} */
+
+/* #stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+} */
