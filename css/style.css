@@ -1014,7 +1014,8 @@ header.sticky .nav_bar {
     border-radius: 10px;
 }
 
-/* Portfolio Img */
+/* Portfolio Images */
+/* Swiper */
 .swiper {
     width: 100%;
     height: 100%;
@@ -1034,17 +1035,14 @@ header.sticky .nav_bar {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .swiper-slide img {
     display: block;
     width: 100%;
-    /* max-width: 1440px; */
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
-
 
 /* Contact */
 .contact .container .content {
@@ -1237,7 +1235,6 @@ footer a {
         font-size: 1.3em;
     }
 
-
     /* Home */
     .home .home_container .info {
         font-size: 0.85rem;
@@ -1285,8 +1282,6 @@ footer a {
     .img_s {
         width: 70%;
     }
-
-
 
     /* Contact */
     .contact .contact_card {
@@ -1413,11 +1408,9 @@ footer a {
 
 }
 
-
 /* particles */
 /* ---- base ---- */
 /* ---- reset ---- */
-
 canvas {
     display: block;
     vertical-align: bottom;
