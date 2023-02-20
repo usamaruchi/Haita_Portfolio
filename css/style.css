@@ -850,6 +850,7 @@ header.sticky .nav_bar {
 .experience_card h3 {
     font-size: 1.3em;
     font-weight: 700;
+    height: 100px;
 }
 
 .experience_card h5 {
