@@ -728,6 +728,32 @@ header.sticky .nav_bar {
     margin-bottom: 80px;
 }
 
+/* .bars{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+
+.bars {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* grid-template-rows: 30px 150px 80px 100px; */
+
+    gap: 20px;
+    width: 100%;
+}
+
+
+.bars li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0;
+    border-bottom: 3px solid var(--second-color);
+}
+
 .edu_list .item {
     background: var(--card-bg-color);
     box-shadow: var(--box-shoadow);
