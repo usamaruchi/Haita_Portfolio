@@ -873,6 +873,11 @@ header.sticky .nav_bar {
     line-height: 30px;
 }
 
+.experience_card .lower li{
+    list-style: disc;
+    list-style-position: inside;
+}
+
 .experience_card h3 {
     font-size: 1.3em;
     font-weight: 700;
